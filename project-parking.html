@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Parking AI — Mariam Mohamed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html#home" class="logo">mariam<span>.dev</span></a>
+    <nav class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="nav-cta">Let's talk</a>
+  </div>
+</header>
+
+<section class="proj-hero">
+  <div class="wrap">
+    <a href="index.html#projects" class="back-link">← Back to Projects</a>
+    <div class="eyebrow">Computer Vision · Image Processing</div>
+    <h1>Smart Parking AI</h1>
+    <p class="lede">An AI-based smart parking system that detects parking slots and identifies available spaces using computer vision.</p>
+    <div class="role-badge"><span class="dotpulse"></span> My role: Data & Preprocessing</div>
+    <div class="meta-row">
+      <span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">Image Processing</span><span class="chip">Visualization</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="https://github.com/mariammohamed45/Smart_Parking-AI" target="_blank" class="btn btn-primary">View on GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap two-col">
+    <div>
+      <h2><span class="n">01</span> Overview</h2>
+      <p>Smart Parking AI analyzes camera footage of a parking lot to detect individual parking slots and determine which ones are occupied or free, visualizing availability for drivers or lot operators.</p>
+    </div>
+    <div>
+      <h2><span class="n">02</span> Problem Statement</h2>
+      <p>Drivers often circle lots looking for open spots because availability isn't visible from the entrance. Automating slot detection from camera footage gives a live, accurate picture of what's actually free.</p>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap">
+    <h2><span class="n">03</span> Features</h2>
+    <ul>
+      <li>Parking slot detection from image/video input</li>
+      <li>Image processing pipeline to prepare frames for analysis</li>
+      <li>Occupied vs. available space classification</li>
+      <li>Visual output showing real-time slot availability</li>
+    </ul>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap two-col">
+    <div>
+      <h2><span class="n">04</span> My Responsibilities</h2>
+      <p>I handled the data and preprocessing side of the pipeline — preparing and processing the parking lot image data so it was clean and consistent for the detection stage that followed.</p>
+    </div>
+    <div>
+      <h2><span class="n">05</span> Architecture & Technologies</h2>
+      <p>The system uses Python and OpenCV for image processing, with a detection stage that identifies parking slot boundaries and occupancy, and a visualization layer that presents availability clearly.</p>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap two-col">
+    <div>
+      <h2><span class="n">06</span> Challenges</h2>
+      <p>Real parking lot footage varies a lot in lighting, angle, and clutter — getting the preprocessing consistent enough for reliable downstream detection took several iterations.</p>
+    </div>
+    <div>
+      <h2><span class="n">07</span> Lessons Learned</h2>
+      <p>I saw firsthand how much a computer vision model's accuracy depends on the quality of the data pipeline feeding it — good preprocessing does a lot of the heavy lifting.</p>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap">
+    <h2><span class="n">08</span> Future Improvements</h2>
+    <ul>
+      <li>Real-time video stream support instead of static frames</li>
+      <li>A live web dashboard showing lot occupancy</li>
+      <li>Model robustness testing across different lighting/weather conditions</li>
+    </ul>
+  </div>
+</section>
+
+<footer><div class="wrap"><p>© 2026 Mariam Mohamed</p></div></footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

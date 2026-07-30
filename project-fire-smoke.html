@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Driven Fire & Smoke Detection — Mariam Mohamed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html#home" class="logo">mariam<span>.dev</span></a>
+    <nav class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="nav-cta">Let's talk</a>
+  </div>
+</header>
+
+<section class="proj-hero">
+  <div class="wrap">
+    <a href="index.html#projects" class="back-link">← Back to Projects</a>
+    <div class="eyebrow">Deep Learning · Computer Vision · Image Classification</div>
+    <h1>AI-Driven Forest Fire & Smoke Detection System</h1>
+    <p class="lede">A deep learning image classification system that categorizes environmental scenes into fire, smoke, and non-fire states, benchmarking a custom CNN against a MobileNetV2 transfer-learning model.</p>
+    <div class="role-badge"><span class="dotpulse"></span> Custom CNN + MobileNetV2 · Data pipeline · Evaluation</div>
+    <div class="meta-row">
+      <span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">OpenCV</span><span class="chip">NumPy</span><span class="chip">Google Colab</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="https://github.com/mariammohamed45/Fire-Smoke-Detection" target="_blank" class="btn btn-primary">View on GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap two-col">
+    <div>
+      <h2><span class="n">01</span> Overview</h2>
+      <p>This project uses a Convolutional Neural Network to classify images into three categories — Fire, Smoke, and Non-Fire — trained on a real-world forest fire and smoke image dataset from Kaggle, with results validated against a MobileNetV2 transfer-learning baseline.</p>
+    </div>
+    <div>
+      <h2><span class="n">02</span> Problem Statement</h2>
+      <p>Early, automated detection of fire and smoke in image or video feeds can support faster response in environments like forests and industrial sites, where manual monitoring is slow or impractical.</p>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap">
+    <h2><span class="n">03</span> Features</h2>
+    <ul>
+      <li>Three-class image classification: Fire / Smoke / Non-Fire</li>
+      <li>Custom lightweight CNN trained from scratch</li>
+      <li>MobileNetV2 transfer-learning model for comparison</li>
+      <li>Data augmentation and class weighting to address dataset imbalance</li>
+      <li>Model evaluation via confusion matrices and classification reports</li>
+      <li>Early stopping, model checkpointing, and ReduceLROnPlateau for stable training</li>
+    </ul>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap two-col">
+    <div>
+      <h2><span class="n">04</span> My Responsibilities</h2>
+      <p>I collected, cleaned, and organized the fire/smoke/non-fire image dataset and prepared it for training. I also built and trained both the custom CNN and the MobileNetV2 transfer-learning model, applied data augmentation and class weighting to correct for class imbalance, and evaluated both models using confusion matrices and classification reports.</p>
+    </div>
+    <div>
+      <h2><span class="n">05</span> Architecture & Technologies</h2>
+      <p>Images were resized to 64×64 and fed into two parallel pipelines: a custom CNN built from scratch, and MobileNetV2 fine-tuned via transfer learning. Both were trained in Google Colab with TensorFlow/Keras, using early stopping and checkpointing to avoid overfitting.</p>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap two-col">
+    <div>
+      <h2><span class="n">06</span> Challenges</h2>
+      <p>The dataset had an uneven number of examples per class, which biased early models toward the majority class. Data augmentation and class weighting were needed to get balanced, trustworthy performance across all three categories.</p>
+    </div>
+    <div>
+      <h2><span class="n">07</span> Lessons Learned</h2>
+      <p>Comparing a model built from scratch against a transfer-learning baseline made the trade-offs concrete: MobileNetV2 converged faster with less data, while the custom CNN gave more control over architecture at the cost of longer training.</p>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap">
+    <h2><span class="n">08</span> Future Improvements</h2>
+    <ul>
+      <li>Deploy the model for real-time video stream inference</li>
+      <li>Expand the dataset with more diverse lighting and terrain conditions</li>
+      <li>Package the model behind a lightweight API or edge-device deployment</li>
+    </ul>
+  </div>
+</section>
+
+<section class="detail-section">
+  <div class="wrap">
+    <h2><span class="n">09</span> Results</h2>
+    <div class="shot-grid">
+      <div class="shot"><img src="https://raw.githubusercontent.com/mariammohamed45/Fire-Smoke-Detection/main/CNN_Accuracy_loss.png" alt="CNN accuracy and loss curves" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="shot"><img src="https://raw.githubusercontent.com/mariammohamed45/Fire-Smoke-Detection/main/CNN_confusion_matrix.png" alt="CNN confusion matrix" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><p>© 2026 Mariam Mohamed</p></div></footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
